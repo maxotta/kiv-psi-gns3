@@ -32,13 +32,12 @@
             "md5sum": "b2a1624465062194e771fb461425783e",
             "filesize": 487587840,
             "download_url": "https://www.dropbox.com/s/20fpz4xhgv8n4dp/vyos-1.4-rolling-202202150317-amd64.iso"
-"
         },
         {
             "filename": "empty8G.qcow2",
             "version": "1.0",
             "md5sum": "f1d2c25b6990f99bd05b433ab603bdb4",
-            "filesize": 197120
+            "filesize": 197120,
             "download_url": "https://www.dropbox.com/s/8gw09duz4lpy9vt/empty8G.qcow2"
         }
     ],
