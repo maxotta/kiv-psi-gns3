@@ -1,0 +1,54 @@
+{
+    "appliance_id": "f82b74c4-0f30-456f-a582-63daca528502",
+    "name": "VyOS",
+    "category": "router",
+    "description": "VyOS is a community fork of Vyatta, a Linux-based network operating system that provides software-based network routing, firewall, and VPN functionality. VyOS has a subscription LTS version and a community rolling release.  The latest version in this appliance is the monthly snapshot of the rolling release track.",
+    "vendor_name": "Linux",
+    "vendor_url": "https://vyos.net/",
+    "documentation_url": "https://docs.vyos.io/",
+    "product_name": "VyOS",
+    "product_url": "https://vyos.net/",
+    "registry_version": 3,
+    "status": "stable",
+    "maintainer": "GNS3 Team",
+    "maintainer_email": "developers@gns3.net",
+    "usage": "Default username/password is vyos/vyos.\n\nAt first boot the router will start from the cdrom. Login and then type \"install image\" and follow the instructions.",
+    "symbol": "vyos.svg",
+    "port_name_format": "eth{0}",
+    "qemu": {
+        "adapter_type": "e1000",
+        "adapters": 3,
+        "ram": 512,
+        "hda_disk_interface": "scsi",
+        "arch": "x86_64",
+        "console_type": "telnet",
+        "boot_priority": "cd",
+        "kvm": "allow"
+    },
+    "images": [
+        {
+            "filename": "vyos-1.4-rolling-202202150317-amd64.iso",
+            "version": "1.4-rolling-202202150317",
+            "md5sum": "b2a1624465062194e771fb461425783e",
+            "filesize": 487587840,
+            "download_url": "https://www.dropbox.com/s/20fpz4xhgv8n4dp/vyos-1.4-rolling-202202150317-amd64.iso"
+"
+        },
+        {
+            "filename": "empty8G.qcow2",
+            "version": "1.0",
+            "md5sum": "f1d2c25b6990f99bd05b433ab603bdb4",
+            "filesize": 197120
+            "download_url": "https://www.dropbox.com/s/8gw09duz4lpy9vt/empty8G.qcow2"
+        }
+    ],
+    "versions": [
+        {
+            "name": "1.4",
+            "images": {
+                "hda_disk_image": "empty8G.qcow2",
+                "cdrom_image": "vyos-1.4-rolling-202202150317-amd64.iso"
+            }
+        }
+    ]
+}
